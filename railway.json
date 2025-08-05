@@ -1,0 +1,17 @@
+{
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "deploy": {
+    "startCommand": "node server.js"
+  },
+  "services": [
+    {
+      "name": "backend",
+      "startCommand": "node server.js",
+      "port": 5000
+    }
+  ]
+}
